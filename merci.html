@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-8GBH3GH0L4');
-
-  // Track conversion événement
-  gtag('event', 'form_submission', {
-    'event_category': 'Form',
-    'event_label': 'Brevo Form',
-    'value': 1
-  });
-</script>
   <meta charset="UTF-8" />
   <title>Merci !</title>
-  <style>body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }</style>
+
+  <!-- GA4 global site tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GBH3GH0L4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8GBH3GH0L4');
+
+    // Track conversion event form_submission
+    gtag('event', 'form_submission', {
+      'event_category': 'Form',
+      'event_label': 'Brevo Form',
+      'value': 1
+    });
+  </script>
+
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+  </style>
 </head>
 <body>
   <h1>Merci pour votre inscription !</h1>
